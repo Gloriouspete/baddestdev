@@ -1,0 +1,81 @@
+@media (max-width: 590px) {
+   body .rectangle{
+      display: none;
+    }
+    body .boxman{
+      width:40vw;
+      height:220px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      position: fixed;
+      top:70px;
+      background-color: #f1f1f1;
+      right:10px;
+      border-radius: 10px 0 0 10px;
+    }
+    body .linkyy{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:40px;
+      height:25px;
+      fill:rgb(63, 3, 63);
+    }
+    .main-body{
+        margin:130px auto;
+        background-color: red;
+    }
+    .two{
+      font-size: 150% !important;
+    }
+    .shalaye{
+      font-size: 100% !important;
+      line-height: 40px;
+    }
+    .three p{
+      font-size: 100%;
+      font-weight: 500;
+    }
+  body .circle{
+    width:70px;
+    height:40px;
+    border-radius: 5px;
+   }
+   .circle svg{
+    width:40px;
+    height:20px;
+   }
+   .project-section{
+    margin:15px !important;
+   }
+   .proone{
+    font-size: 90% !important;
+   }
+   .workbox{
+    width: 90vw !important;
+   }
+   body .concover {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  body .upcover {
+    display:block;
+    width: 97vw;
+  }
+  body .downcover{
+    display: block;
+    width: 97vw;
+  }
+  body .contact {
+    margin: 5% auto;
+    width: 97vw;
+    height: 600px;
+    box-shadow: 0px 2px 2px black;
+    border-radius: 10px;
+  }
+  body .image img{
+    width:97vw;
+  }
+}

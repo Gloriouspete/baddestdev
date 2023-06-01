@@ -1,0 +1,473 @@
+body {
+  background-color: #f1f1f1;
+
+}
+
+/* Define the bubble class */
+.bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e8d256;
+  position: absolute;
+  animation-name: bubble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bubble:nth-child(1) {
+  top: 100px;
+  left: 100px;
+}
+
+.bubble:nth-child(2) {
+  top: 200px;
+  left: 300px;
+}
+
+.bubble:nth-child(3) {
+  top: 50px;
+  right: 100px;
+}
+
+/* Define the animation keyframes */
+@keyframes bubble {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(236, 240, 243);
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 1px 1px #f1f1f1;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+}
+
+.logo {
+  font-size: 240%;
+  color: #d611f0;
+  text-shadow: 2px 4px 2px black;
+  margin-left: 20px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+
+}
+.logoname{
+  line-height:10px;
+}
+.logoname::after{
+content: 'O';
+color:#f1f1f1
+}
+
+.rectangle {
+  float: right;
+  height: 40px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homie svg {
+  width: 30px;
+  height: 25px;
+  fill: #410249;
+}
+
+
+.homie {
+  height: 40px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-body {
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+}
+
+.one {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.two {
+  font-size: 200%;
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.linkyy {
+  display: none;
+}
+
+.two::after {
+  content: ' Glo.';
+  color: purple;
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.typewriter {
+  overflow: hidden;
+  animation-duration: 5s;
+  animation-name: typing;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(30);
+  animation-delay: calc(1s/(30 * 2));
+  white-space: nowrap;
+}
+
+.typewriter::after {
+  content: '|';
+  animation: cursor 1s infinite;
+}
+
+@keyframes typing {
+  0% {
+    max-width: 0
+  }
+
+  50% {
+    max-width: 100%
+  }
+
+  100% {
+    max-width: 0
+  }
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+.three {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.shalaye {
+  width: 80%;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-family: 'san serif';
+
+}
+
+.boxman {
+  display: none;
+}
+
+.four {
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.circle {
+  width: 120px;
+  height: 70px;
+  box-shadow: 2px 2px 2px black;
+  border: 1px solid purple;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.five {
+  color: purple;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toolstack {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.boxy {
+  margin: 4%;
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  border: 1px solid purple;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact {
+  margin: 5% auto;
+  width: 97vw;
+  height: 500px;
+  box-shadow: 0px 2px 2px black;
+  border-radius: 10px;
+}
+
+.seven {
+  color: purple;
+  font-weight: 800;
+}
+
+.image img {
+  width: 40vw;
+  height: 250px;
+  background-color: red;
+}
+
+svg {
+  width: 80px;
+  height: 50px;
+}
+
+img {
+  width: 80px;
+  height: 50px;
+}
+
+.ade {
+  width: 40px;
+  height: 40px;
+}
+
+.rectangle a {
+  text-decoration: none;
+}
+
+.project {
+  width: 90vw;
+  height: auto;
+  padding-bottom: 5%;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 10px;
+  margin: 5% auto;
+}
+
+.project h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box {
+  width: 100;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectm {
+  margin: 3%;
+  width: 40%;
+  border-radius: 20px;
+  height: 250px;
+  background-color: purple;
+  box-shadow: 2px 2px 2px black;
+}
+
+.projectm:hover {
+  background-color: purple;
+}
+
+.button {
+  background-color: #f1f1f1;
+  width: 170px;
+  height: 50px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  color: purple;
+  font-size: 110%;
+  font-weight: 700;
+  margin: 3% auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.footr {
+  width: 99vw;
+  background-color: purple;
+  position: absolute;
+  box-shadow: 2px 2px 2px #f1f1f1;
+
+}
+
+.footr p {
+  text-align: center;
+}
+
+.about-me {
+  width: 95vw;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 40px auto 0;
+
+}
+
+* {
+  
+}
+
+.dean {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section {
+  margin: 60px auto;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 2px #f1f1f1;
+
+
+
+}
+
+.proone {
+  text-align: center;
+  font-size: 150%;
+  color: purple;
+  text-shadow: 2px 1px 1px white;
+}
+
+.workyy {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-around;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workbox {
+  width: 40vw;
+  height: auto;
+  border: 3px dotted black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.morty {
+  width: 95%;
+  height: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: -2px 3px 2px 2px grey;
+}
+
+.subject-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.mytexts {
+  text-align: center;
+  font-weight: 600;
+}
+
+.mafor {
+  background-color: purple;
+  width: 80px;
+  height: 30px;
+  align-items: center;
+  color: white;
+  text-shadow: none;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.redbox svg {
+  width: 30px;
+}
+
+.redbox {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.morty img {
+  width: 100%;
+  height: 100%;
+}
+.concover {
+  display:flex;
+}
+.upcover {
+  display:block;
+}
+.downcover{
+  display: block;
+}
+.myname{
+text-shadow: 2px 2px 2px #f1f1f1;
+text-align: center;
+}
+.nine{
+  font-weight: 600;
+  text-align: center;
+}

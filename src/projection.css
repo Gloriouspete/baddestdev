@@ -1,0 +1,10 @@
+.allay p{
+    font-weight: 600;
+    font-size: 130%;
+}
+.allay{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
