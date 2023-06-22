@@ -12,13 +12,13 @@ export const India = () => {
                 <div className='workyy'>
                     <div className='workbox 1'>
                         <div className='morty'>
-                        <img src={translapp}></img>
+                        <img src={translapp}  alt="Description of"/>
                         </div>
                         <div className='textbased-box'>
                             <div className='headline'>
                                 <h2>Rant HQ</h2>
                                 <div className='redbox'>
-                                    <a href=""><Demo /></a>
+                                    <a href="https://example.com"><Demo /></a>
                                     <a href='https://github.com/Gloriouspete/social'><Github /></a>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ export const India = () => {
                     </div>
                     <div className='workbox 2'>
                         <div className='morty'>
-                        <img src={translapp}></img>
+                        <img src={translapp}  alt="Description of "/>
                         </div>
                         <div className='textbased-box'>
                             <div className='headline'>
@@ -65,7 +65,7 @@ export const India = () => {
                     </div>
                     <div className='workbox 2'>
                         <div className='morty'>
-                        <img src={mysearch}></img>
+                        <img src={mysearch}  alt="Description o"/>
                         </div>
                         <div className='textbased-box'>
                             <div className='headline'>
@@ -93,7 +93,7 @@ export const India = () => {
                     </div>
                     <div className='workbox 2'>
                         <div className='morty'>
-                       <img src={reddit}></img>
+                       <img src={reddit}  alt="Description of "/>
                         </div>
                         <div className='textbased-box'>
                             <div className='headline'>
@@ -145,14 +145,14 @@ export const India = () => {
                     </div>
                     <div className='workbox 2'>
                         <div className='morty'>
-                            <img src={reddit}></img>
+                            <img src={reddit}  alt="Description of"/>
 
                         </div>
                         <div className='textbased-box'>
                             <div className='headline'>
                                 <h2>Reddit Crawler</h2>
                                 <div className='redbox'>
-                                    <a href="https://"><Demo /></a>
+                                    <a href="https://redditcrawler.vercel.app"><Demo /></a>
                                     <a href='https://github.com/gloriouspete/redditcrawler'><Github /></a>
                                 </div>
                             </div>

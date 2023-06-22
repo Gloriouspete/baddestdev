@@ -1,7 +1,8 @@
 import './Media.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import {Boxman} from './Boxman';
+import { Boxman } from './Boxman';
+import { Github } from './misc';
 export const Header = () => {
 
   const [isHoveredHome, setIsHoveredHome] = useState(false);
@@ -40,29 +41,28 @@ export const Header = () => {
   const handleMouseOffContact = () => {
     setIsHoveredContact(false);
   };
-  const [isClick,setisClick] = useState(false);
+  const [isClick, setisClick] = useState(false);
 
-  const edonckick = ()=>{
+  const edonckick = () => {
     setisClick(previsClick => !previsClick);
   }
-  
+
   return (
     <>
       <div className="header">
         <div className="logo">
-         <p className='logoname'>GL</p>
+          <p className='logoname'>GL</p>
         </div>
         <div className='linkyy'
-        onClick={edonckick}
+          onClick={edonckick}
         >
-           <svg id='svg' xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512">
-                <path
-                    d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z" />
-            </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+            <path d="M32 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 288zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z"/></svg>
+          
 
         </div>
-        {isClick && <Boxman/>}
+        {isClick && <Boxman />}
         <div className="rectangle">
           <Link to="/">
             <div className="homie"
@@ -117,19 +117,16 @@ export const Homer = () => {
       <div className="four">
 
         <div className="circle">
-        <a href='https://linkedin.com/in/gloriouspete'>
-          <svg className="ade" viewBox="0 0 128 128">
-            <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
-          </svg>
+          <a href='https://linkedin.com/in/gloriouspete'>
+            <svg className="ade" viewBox="0 0 128 128">
+              <path fill="#0076b2" d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z"></path><path fill="#fff" d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"></path>
+            </svg>
           </a>
 
         </div>
         <div className="circle">
-          <a href='https://twitter.com/gloriousreborne'>
-
-          <svg className="ade" viewBox="0 0 128 128">
-            <path d="M40.254 127.637c48.305 0 74.719-48.957 74.719-91.403 0-1.39 0-2.777-.075-4.156 5.141-4.547 9.579-10.18 13.102-16.633-4.79 2.602-9.871 4.305-15.078 5.063 5.48-4.02 9.582-10.336 11.539-17.774-5.156 3.743-10.797 6.38-16.68 7.801-8.136-10.586-21.07-13.18-31.547-6.32-10.472 6.86-15.882 21.46-13.199 35.617C41.922 38.539 22.246 26.336 8.915 6.27 1.933 20.94 5.487 39.723 17.022 49.16c-4.148-.172-8.207-1.555-11.832-4.031v.41c0 15.273 8.786 28.438 21.02 31.492a21.596 21.596 0 01-11.863.543c3.437 13.094 13.297 22.07 24.535 22.328-9.305 8.918-20.793 13.75-32.617 13.72-2.094 0-4.188-.15-6.266-.446 12.008 9.433 25.98 14.441 40.254 14.422" fill="#1da1f2"></path>
-          </svg>
+          <a href='https://github.com/github'>
+            <Github />
           </a>
 
         </div>

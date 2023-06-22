@@ -5,15 +5,25 @@ body {
 
 /* Define the bubble class */
 .bubble {
-  width: 60px;
+  width: 20px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #e8d256;
   position: absolute;
   animation-name: bubble;
   animation-duration: 3s;
-  animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.con1{
+  width: 100vw;
+  height: 10vh;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  fill: rgb(68, 0, 128);
 }
 
 .bubble:nth-child(1) {
@@ -34,13 +44,34 @@ body {
 /* Define the animation keyframes */
 @keyframes bubble {
   0% {
-    transform: translate(0, 0);
-    opacity: 1;
+
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    border: 1px solid red;
+    left: 0;
+
+  }
+
+  35% {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    background-color: #d611f0;
+  }
+
+  70% {
+    position: fixed;
+    left: 0;
+    bottom: 0;
   }
 
   100% {
-    transform: translate(0, -100px);
-    opacity: 0;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -58,7 +89,7 @@ body {
 }
 
 .logo {
-  font-size: 240%;
+  font-size: 220%;
   color: #d611f0;
   text-shadow: 2px 4px 2px black;
   margin-left: 20px;
@@ -66,12 +97,14 @@ body {
   letter-spacing: 2px;
 
 }
-.logoname{
-  line-height:10px;
+
+.logoname {
+  line-height: 10px;
 }
-.logoname::after{
-content: 'O';
-color:#f1f1f1
+
+.logoname::after {
+  content: 'O';
+  color: #f1f1f1
 }
 
 .rectangle {
@@ -223,8 +256,12 @@ color:#f1f1f1
   color: purple;
   font-weight: 800;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 0 10px;
 }
-
+.six{
+  margin: 0 10px;
+  font-size: 120%;
+}
 .toolstack {
 
   display: flex;
@@ -248,7 +285,7 @@ color:#f1f1f1
   margin: 5% auto;
   width: 97vw;
   height: 500px;
-  box-shadow: 0px 2px 2px black;
+  box-shadow: 0px 2px 2px grey;
   border-radius: 10px;
 }
 
@@ -355,9 +392,7 @@ img {
 
 }
 
-* {
-  
-}
+* {}
 
 .dean {
   width: 100%;
@@ -445,29 +480,36 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-button{
+
+button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .morty img {
   width: 100%;
   height: 100%;
 }
+
 .concover {
-  display:flex;
+  display: flex;
 }
+
 .upcover {
-  display:block;
-}
-.downcover{
   display: block;
 }
-.myname{
-text-shadow: 2px 2px 2px #f1f1f1;
-text-align: center;
+
+.downcover {
+  display: block;
 }
-.nine{
+
+.myname {
+  text-shadow: 2px 2px 2px #f1f1f1;
+  text-align: center;
+}
+
+.nine {
   font-weight: 600;
   text-align: center;
 }
